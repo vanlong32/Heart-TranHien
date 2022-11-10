@@ -34,15 +34,21 @@
       <div id="music-container"></div>
       <div id="canva" >
       <canvas id="canvas" width="1366" height="860"></canvas>
-      <audio controls autoplay>
-  <source src="nhac.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-       
-
+      <audio  id="audio" controls autoplay>
+          <source src="./img/nhac.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
     </div>
    
-      
+    <script type=”text/javascript”>
+       function autoplay(){
+    var r =confirm(“Would You Like To AutoPlay Music?”);
+    if (r == true) {
+        document.getElementById(“audio”).play();
+    }
+  }
+</script>
+<script>autoplay();</script> 
 
 
     <script src="main.js"></script>

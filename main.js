@@ -19,7 +19,14 @@ var bgMusicControls = true; // Show UI music control
 
   let kiemtramobile = mobileCheck ();
 
-  kiemtramobile;
+
+if (kiemtramobile)
+{
+ radius = 240; 
+ imgWidth = 120; 
+ imgHeight = 170; 
+
+}
 
 
 
@@ -297,11 +304,11 @@ void main(){
   // Cài đặt: 
   // [pos.y +=] : điều chỉnh thông số này trái tim sẽ di duyển lên trên hoặc xuống dưới
   // [float scale] : chỉnh số 0.000x để chỉnh kích thước trái tim
-	pos.y += 0.05;
+	pos.y += 0.045;
 	float scale = 0.000022 * height;
 	
   if (height > width) {
-    pos.y += 0.6;
+    pos.y += 0.4;
     scale = 0.000022 * height;
   }
  
